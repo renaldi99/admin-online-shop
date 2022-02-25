@@ -121,18 +121,8 @@ class AddProduct extends Component {
   };
 
   render() {
-    const {
-      image1,
-      image2,
-      nama,
-      harga,
-      berat,
-      jenis,
-      ukuran,
-      ready,
-      catalog,
-      log,
-    } = this.state;
+    const { image1, image2, nama, harga, berat, jenis, ukuran, ready, log } =
+      this.state;
     const { getListCatalogResult, addProductLoading } = this.props;
 
     return (
@@ -155,7 +145,7 @@ class AddProduct extends Component {
                     <Col md={6}>
                       <Row>
                         <Col>
-                          <img src={image1} width="300" alt="Image 1" />
+                          <img src={image1} width="300" alt="Image1" />
                           <FormGroup>
                             <Label>Image Product 1</Label>
                             <Input
@@ -180,7 +170,7 @@ class AddProduct extends Component {
                           )}
                         </Col>
                         <Col>
-                          <img src={image2} width="300" alt="Image 2" />
+                          <img src={image2} width="300" alt="Image2" />
                           <FormGroup>
                             <Label>Image Product 2</Label>
                             <Input

@@ -174,7 +174,6 @@ class EditProduct extends Component {
       jenis,
       ukuran,
       ready,
-      catalog,
       ukuranSelected,
       editUkuran,
       log,
@@ -200,7 +199,7 @@ class EditProduct extends Component {
                     <Col md={6}>
                       <Row>
                         <Col>
-                          <img src={image1} width="300" alt="Image 1" />
+                          <img src={image1} width="300" alt="Image1" />
                           <FormGroup>
                             <Label>Image Product 1</Label>
                             <Input
@@ -225,7 +224,7 @@ class EditProduct extends Component {
                           )}
                         </Col>
                         <Col>
-                          <img src={image2} width="300" alt="Image 2" />
+                          <img src={image2} width="300" alt="Image2" />
                           <FormGroup>
                             <Label>Image Product 2</Label>
                             <Input

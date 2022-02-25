@@ -20,7 +20,6 @@
 import {
   Dashboard,
   ListCatalog,
-  Icons,
   AddCatalog,
   EditCatalog,
   ListProduct,
