@@ -84,7 +84,6 @@ export const checkLogin = (history) => {
 export const logoutUser = (history) => {
   return (dispatch) => {
     dispatchLoading(dispatch, LOGOUT_USER);
-
     FIREBASE.auth()
       .signOut()
       .then((response) => {

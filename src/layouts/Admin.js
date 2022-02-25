@@ -40,6 +40,7 @@ function Dashboard(props) {
   React.useEffect(() => {
     const { dispatch, history } = props;
 
+    // cek url / login jika user main akses ke halaman dashboard
     dispatch(checkLogin(history));
     if (navigator.platform.indexOf("Win") > -1) {
       ps = new PerfectScrollbar(mainPanel.current);

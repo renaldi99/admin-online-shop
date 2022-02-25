@@ -28,7 +28,7 @@ import "assets/demo/demo.css";
 import "perfect-scrollbar/css/perfect-scrollbar.css";
 
 import AdminLayout from "layouts/Admin.js";
-import { Login } from "./views";
+import { Login, Finish, Unfinish, Failed } from "./views";
 
 ReactDOM.render(
   <Provider store={store}>
@@ -36,6 +36,9 @@ ReactDOM.render(
       <Switch>
         <Route path="/admin" render={(props) => <AdminLayout {...props} />} />
         <Route path="/login" component={Login} exact />
+        <Route path="/payment/finish" component={Finish} exact />
+        <Route path="/payment/unfinish" component={Unfinish} exact />
+        <Route path="/payment/error" component={Failed} exact />
         <Redirect to="/login" />
       </Switch>
     </BrowserRouter>

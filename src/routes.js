@@ -26,6 +26,7 @@ import {
   ListProduct,
   AddProduct,
   EditProduct,
+  ListOrder,
 } from "./views";
 
 var routes = [
@@ -82,12 +83,20 @@ var routes = [
     sidebar: false,
   },
   {
-    path: "/icons",
-    name: "Icons",
-    icon: "nc-icon nc-diamond",
-    component: Icons,
+    path: "/order",
+    name: "Order",
+    icon: "nc-icon nc-bag-16",
+    component: ListOrder,
     layout: "/admin",
     sidebar: true,
   },
+  // {
+  //   path: "/icons",
+  //   name: "Icons",
+  //   icon: "nc-icon nc-diamond",
+  //   component: Icons,
+  //   layout: "/admin",
+  //   sidebar: true,
+  // },
 ];
 export default routes;
