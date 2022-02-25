@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 import {
+  Button,
   Card,
   CardBody,
   CardHeader,
@@ -11,6 +13,7 @@ import {
   Table,
 } from "reactstrap";
 import { getListOrder } from "actions/OrderAction";
+import swal from "sweetalert";
 import { numberWithCommas } from "utils";
 import { Orders } from "components";
 
@@ -83,7 +86,6 @@ class ListOrder extends Component {
                               href={getListOrderResult[key].url}
                               className="btn btn-primary"
                               target="_blank"
-                              rel="noreferrer"
                             >
                               <i className="nc-icon nc-money-coins" /> Payment
                             </a>

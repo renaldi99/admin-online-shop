@@ -145,7 +145,7 @@ class AddProduct extends Component {
                     <Col md={6}>
                       <Row>
                         <Col>
-                          <img src={image1} width="300" alt="Image1" />
+                          <img src={image1} width="300" alt="Image 1" />
                           <FormGroup>
                             <Label>Image Product 1</Label>
                             <Input
@@ -170,7 +170,7 @@ class AddProduct extends Component {
                           )}
                         </Col>
                         <Col>
-                          <img src={image2} width="300" alt="Image2" />
+                          <img src={image2} width="300" alt="Image 2" />
                           <FormGroup>
                             <Label>Image Product 2</Label>
                             <Input
